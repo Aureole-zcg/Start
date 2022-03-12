@@ -1,5 +1,4 @@
-# start
-As the first C repository for freshmen.
+
 #include<stdio.h>
 int main()
 {
