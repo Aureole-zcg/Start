@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int m,gw,sw,bw;
+printf("请输入一个3位正整数：");
+scanf("%d",&m);
+if(m>=100&&m<1000)
+{
+ gw=m%10;   //个位数字
+ sw=m/10%10; //十位数字
+ bw=m/100;  //百位数字
+ printf("%d的各位数字之和是%d\n",m,gw+sw+bw);
+}
+    else
+{
+    printf("输入有误\n");
+}
+    return 0;
+}
