@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int a, s, c ;
+	printf("请输入正整数：");
+	scanf("%d", &a);
+	c = 4 * a;
+	s = a * a;
+	printf("正方形周长为：%d\n", c);
+	printf("正方形面积为：%d\n", s);
+	return 0;
+}
