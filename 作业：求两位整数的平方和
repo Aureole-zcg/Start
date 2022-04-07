@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int a, b, sum;
+	printf("请输入两个整数:");
+	scanf("%d,%d", &a, &b);
+	sum = a * a + b * b;
+	printf("它们的平方和为：%d\n", sum);
+	return 0;
+}
