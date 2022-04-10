@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+	int x, y, z;
+	printf("请输入三个整数：");
+	scanf("%d%d%d", &x, &y, &z);
+	if (x > y)
+	{
+		if (y > z)
+		{
+			printf("三个整数的大小顺序为%d>%d>%d\n", x, y, z);//x>y>z
+		}
+		else//z>y
+		{
+			if (z > x)
+			{
+				printf("三个整数的大小顺序为%d>%d>%d\n", z, x, y);//z>x>y
+			}
+			else//x>z
+			{
+				printf("三个整数的大小顺序为%d>%d>%d\n", x, z, y);//x>z>y
+			}
+		}
+	}
+	else//y>x
+	{
+		if (y > z)
+		{
+			if (x > z)
+			{
+				printf("三个整数的大小顺序为%d>%d>%d\n", y, x, z);//y>x>z
+			}
+			else//z>x
+			{
+				printf("三个整数的大小顺序为%d>%d>%d\n", y, z, x);//y>z>x
+			}
+		}
+		else//z>y
+		{
+			printf("三个整数的大小顺序为%d>%d>%d\n", z, y, x);//z>y>x
+		}
+	}
+	return 0;
+}
