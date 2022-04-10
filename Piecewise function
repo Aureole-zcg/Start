@@ -1,0 +1,23 @@
+ #include<stdio.h>
+int main()
+{
+	int x;
+	printf("自变量x=");
+	scanf("%d", &x);
+	if (x == 0)
+	{
+		printf("函数值y=0\n");
+	}
+	else//x!=0
+	{
+		if (x > 0)
+		{
+			printf("函数值y=18\n");
+		}
+		else//x<0
+		{
+			printf("函数值y=-10\n");
+		}
+	}
+	return 0;
+}
