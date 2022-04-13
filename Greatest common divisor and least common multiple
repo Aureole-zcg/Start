@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int a, b, c;
+	printf("请输入两个正整数的值a，b:");
+	scanf("%d,%d", &a, &b);
+	c = a < b ? a : b;
+	while ( a % c || b % c)
+		c = c - 1;
+	printf("最大公约数(%d,%d)=%d\n", a,b,c);
+	printf("最小公倍数(%d,%d)=%d\n", a,b,a*b/c);
+	return 0;
+}
