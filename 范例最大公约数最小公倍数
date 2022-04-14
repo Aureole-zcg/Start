@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+	int m, n, p, r;
+	printf("请输入两个正整数:");
+	scanf("%d%d", &m, &n);
+	p = m * n;
+	while (n != 0)
+	{
+		r = m % n;
+		m = n;
+		n = r;
+	}
+	printf("最大公约数是：%d\n", m);
+	printf("最小公倍数是：%d\n", p / m);
+	return 0;
+}
