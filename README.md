@@ -1,2 +1,3 @@
 # Start
-As the first C repository for freshmen.
+The first C repository.
+💻
