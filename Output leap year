@@ -17,3 +17,27 @@ int main()
 	}
 	return 0;
 }
+-----------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int year = 1949,i=0;
+	while (year <= 2019)
+	{
+		if((year % 4 == 0 && year % 100 != 0)||( year % 400 == 0))
+		{
+			printf("%d ", year);
+			year++;
+			i++;
+			if (i % 5 == 0)
+			{
+				printf("\n");
+			}
+		}
+		else
+		{
+			year++;
+		}
+	}
+	return 0;
+}
