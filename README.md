@@ -1,4 +1,4 @@
 # Start
 The first C repository.
 💻
-In memory of my freshman programming career。
+In memory of my freshman programming career.
