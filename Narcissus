@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int n = 100, gw, sw, bw;
+	while (n < 999)
+	{
+		gw = n % 10;
+		sw = n / 10 % 10;
+		bw = n / 100;
+		if (n == gw * gw * gw + sw * sw * sw + bw * bw * bw)
+		{
+			printf("%7d", n);
+		}
+		n++;
+	}
+	return 0;
+}
