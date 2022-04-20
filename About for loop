@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int a, b;
+	for (a = 1; a < 7; a++)
+		printf("%3d",a);
+	b = 7 / a;
+	printf("%4d\n", b);
+	return 0;
+}//输出结果为  1  2  3  4  5  6   1
+//因为只有7/7=1
+//也就说明for循环最后一次储存的是a=7，也就是没有参与循环体的a++之后的数值
