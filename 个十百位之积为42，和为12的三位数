@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int x, gw, sw, bw;
+	for (x = 200; x <= 300; x++)
+	{
+		gw = x % 10;
+		sw = x / 10 % 10;
+		bw = x / 100;
+		if (gw * sw * bw == 42 && gw + sw + bw == 12)
+		{
+			printf("%d\n", x);
+		}
+	}
+	return 0;
+}
