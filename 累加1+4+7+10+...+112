@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int x, y = 0;
+	for (x = 1; x <= 112; x = x + 3)
+	{
+		y = y + x;
+	}
+	printf("%d\n", y);
+	return 0;
+}
