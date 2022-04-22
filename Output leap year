@@ -4,7 +4,7 @@ int main()
 	int year, a=0;
 	for (year = 1949; year <= 2019; year++)
 	{
-		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))//也可(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
 		{
 			printf("%d ",year);
 				a++;
