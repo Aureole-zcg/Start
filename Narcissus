@@ -2,7 +2,7 @@
 int main()
 {
 	int n = 100, gw, sw, bw;
-	while (n < 999)
+	while (n <= 999)
 	{
 		gw = n % 10;
 		sw = n / 10 % 10;
