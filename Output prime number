@@ -19,6 +19,25 @@ int main()
 	return 0;
 }//输出素数
 ----------------------------------------------------
+e.g.
+#include<stdio.h>
+int main()
+{
+	int i, m, k;
+	for (m = 100; m <= 200; m++)
+	{
+		k = m / 2;
+		for (i = 2; i <= k; i++)
+			if (m % i == 0) break;
+		if (i > k)
+		{
+			printf("%d ", m);
+		}
+	}
+	printf("\n");
+	return 0;
+}//作业范例
+----------------------------------------------------
 //判断是否是素数
 #include<stdio.h>
 int main()
