@@ -26,3 +26,40 @@ int main()
 	printf("\n");
 	return 0;
 }//bubble
+---------------------------------------------------------------------------------------------------
+#include <stdio.h>
+int main()
+{
+	int a[10];
+	int i, j, t, flag; 
+		printf("input 10 numbers :");
+	for (i = 0; i < 10; i++)
+		scanf("%d", &a[i]);
+	for (j = 0; j < 9; j++)//进行9次循环，实现9趟比较
+	{
+		flag = 1;
+		for (i = 0; i < 9 - j; i++)//在每一趟中进行9-j次比较
+		{
+			if (a[i] > a[i + 1]) //相邻两个数比较             
+			{
+				t = a[i];
+				a[i] = a[i + 1];
+				a[i + 1] = t;
+				flag = 0;
+			}
+		}
+		if (flag) break;
+		printf("第%d趟排序: ", j + 1);
+		for (i = 0; i < 10; i++)
+			printf("%d ", a[i]);
+		printf("\n");
+	}
+	if (j == 0)//避免数组本身已按照大小进行排列而导致if( 1 ) break;执行使得无结果输出
+	{
+		printf("第%d趟排序: ", j + 1);
+		for (i = 0; i < 10; i++)
+			printf("%d ", a[i]);
+		printf("\n");
+	}
+	return 0;
+}
