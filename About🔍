@@ -22,3 +22,12 @@ int main()
 	return 0;
 }
 //关系表达式的值是“真”和“假”，在C程序中用整数1和0表示
+----------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int money = 100, price = 120;
+	printf("%d\n", money >= price);
+	//money >= price为假，输出0
+	return 0;
+}
