@@ -1,0 +1,21 @@
+#include<stdio.h>
+/*Statement*/
+int pythagorean_theorem(int x, int y);
+
+int main()
+{
+	int x = 3, y = 4, z;
+	z = pythagorean_theorem(x, y);
+	printf("勾股定理表达式：");
+	printf("x^2+y^2=z^2\n");
+	printf("%d+%d=%d\n", x * x, y * y, z);
+	return 0;
+}
+
+/*Definition*/
+pythagorean_theorem(int x, int y)
+{
+	int a;
+	a = x * x + y * y;
+	return(a);
+}
