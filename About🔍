@@ -31,3 +31,13 @@ int main()
 	//money >= price为假，输出0
 	return 0;
 }
+----------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int money = 50, price = 25;
+	money = money - price;
+	if (money) printf("交易完成\n");
+	//计算结果为非零的表达式被视为true
+	return 0;
+}
