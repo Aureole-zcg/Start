@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int money = 100, price = 120;
+	printf("buy?\n");
+	printf("%s\n", money >= price ? "yes" : "no");
+	//三目运算符，表达式1？表达式2:表达式3
+	return 0;
+}
