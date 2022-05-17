@@ -1,0 +1,17 @@
+//（5）编写程序，从键盘上输入10个整数存入一维数组a中，逆序输出数组a中的元素。
+#include<stdio.h>
+int main()
+{
+	int a[10], i;
+	printf("请输入10个整数：");
+	for (i = 0; i <= 9; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	for (i = 9; i >= 0; i--)
+	{
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+	return 0;
+}
