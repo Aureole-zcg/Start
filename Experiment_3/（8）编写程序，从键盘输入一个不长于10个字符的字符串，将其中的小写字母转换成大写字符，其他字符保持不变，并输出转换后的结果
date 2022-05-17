@@ -1,0 +1,14 @@
+//（8）编写程序，从键盘输入一个不长于10个字符的字符串，将其中的小写字母转换成大写字符，其他字符保持不变，并输出转换后的结果
+#include<stdio.h>
+int main()
+{
+	char str[11];
+	int i;
+	printf("请输入一个不大于10个字符的字符串：");
+	gets(str);
+	for (i = 0; i <= 10; i++)
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
+	printf("转换后的字符串是：%s\n", str);
+	return 0;
+}
