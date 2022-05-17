@@ -1,0 +1,12 @@
+//（7）编写程序，从键盘输入一个字符串，统计并输出该字符串中字符的个数。
+#include<stdio.h>
+int main()
+{
+	char str[100];
+	int i, len = 0;
+	gets(str);
+	for (i = 0; i <= str[i] != '\0'; i++)
+		len = len++;
+	printf("长度是%d\n", len);
+	return 0;
+}
