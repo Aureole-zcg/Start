@@ -1,0 +1,19 @@
+/*（4）用结构体类型变量表示平面上的一个点（横坐标和纵坐标），输入两个点，求两点之间的距离。*/
+#include "stdio.h"
+#include "math.h"
+int  main()
+{
+	struct point
+	{
+		float x;
+		float y;
+	}p1, p2;
+	float d;
+	printf("请输入第一个点的坐标：");
+	scanf("%f,%f", &p1.x, &p1.y);
+	printf("请输入第二个点的坐标：");
+	scanf("%f,%f", &p2.x, &p2.y);
+	d = (float)sqrt((p2.x - p1.x) * (p2.x - p1.x) + (p2.y - p1.y) * (p2.y - p1.y));
+	printf("两点之间的距离=%.3f\n", d);
+	return 0;
+}
