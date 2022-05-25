@@ -1,0 +1,47 @@
+/*（5）定义一个枚举类型，循环输入待查询的月份，输出该月份的天数。*/
+#include "stdio.h"
+int  main()
+{
+	enum month { Jan = 1, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec };
+	int mon;
+	printf("请输入要查询的月份，输入0退出查询：");
+	scanf("%d", &mon);
+	while (mon != 0)
+	{
+		switch (mon)
+		{
+		case Jan:
+		case Mar:
+		case May:
+		case Jul:
+		case Aug:
+		case Oct:
+		case Dec:
+		{
+			printf("%d月有%d天\n", mon, 31);
+			break;
+		}
+		case Feb:
+		{
+			printf("%d月有%d天\n", mon, 28);
+			break;
+		}
+		case Apr:
+		case Jun:
+		case Sep:
+		case Nov:
+		{
+			printf("%d月有%d天\n", mon, 30);
+			break;
+		}
+		default:
+		{
+			printf("输入数据有误！\n");
+		}
+		}
+		printf("请输入要查询的月份，输入0退出查询：");
+		scanf("%d", &mon);
+	}
+
+	return 0;
+}
