@@ -1,0 +1,15 @@
+/*（3）编写程序，输入一个5位正整数,倒序输出它的各位数字。*/
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("请输入一个5位正整数:");
+    scanf("%d", &n);
+    printf("该数的各位数字倒序输出是:");
+    do {
+        printf("%d", n % 10);
+        n = n / 10;
+    } while (n > 0);
+    printf("\n");
+    return 0;
+}
