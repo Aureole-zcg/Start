@@ -1,0 +1,14 @@
+//（1）编写程序，求1~1000之间能同时被3,5,7整除的数。
+#include<stdio.h>
+int main()
+{
+	int m;
+	for (m = 1; m <= 1000; m++)
+	{
+		if (m % 3 == 0 && m % 5 == 0 && m % 7 == 0)
+			printf("%d ", m);
+
+	}
+	printf("\n");
+	return 0;
+}
